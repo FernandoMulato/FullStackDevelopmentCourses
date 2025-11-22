@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <!-- So that the password is not displayed -->
+            <label for="password">Password</label>
+            <input id="password" type="password" name="Password">
+        </div>
+        <div>
+            <!-- Numerical values with constraints -->
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" min="18" max="70">
+        </div>
+        <div>
+            <!-- To request date using a calendar-->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="Date">
+        </div>
+        <div>
+            <!-- To choose a color -->
+            <label for="color">Color:</label>
+            <input type="color" id="color"  name="Color">
+        </div>
+        <div>
+            <!-- Helps to group information that is related in a semantic way -->
+            <fieldset>
+                <!-- Title of this grouping -->
+                <legend>Gender</legend>
+
+                <input type="radio" name="Gender" id="male" value="M">
+                <label for="male">Male</label>
+
+                <input type="radio" name="Gender" id="female" value="F">
+                <label for="female">Female</label>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validations</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <!-- For required fields -->
+            <label for="email">Email:</label>
+            <input type="email" name="Email" id="email" placeholder="user@example.com" required>
+        </div>
+        <div>
+            <!-- Only allows 9 numbers from 0 to 9 -->
+            <label for="phoneNumber">PhoneNumber:</label>
+            <input type="tel" name="PhoneNumber" id="phoneNumber" title="Enter 9 digits" placeholder="123456789" pattern="[0-9]{9}">
+        </div>
+        <div>
+            <!-- Minimum, maximum, jumps and default value -->
+            <label for="amount">Amount:</label>
+            <input type="number" name="Amount" id="amount" min="1" max="100" step="5" value="10">
+        </div>
+        <div>
+            <!-- Date range -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="Date" min="2024-01-01" max="2024-12-31">
+        </div>
+        <div>
+            <!-- Minimum length-->
+            <label for="password">Password (minimum 8 characters):</label>
+            <input id="password" type="password" name="Password" placeholder="Minimum 8 characters" minlength="8" required>
+        </div>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

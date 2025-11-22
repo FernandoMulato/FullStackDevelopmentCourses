@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox and Select</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="Password">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="Age" id="age" min="18" max="70">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="Date">
+        </div>
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" id="color"  name="Color">
+        </div>
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+
+                <input type="radio" name="Gender" id="male" value="M">
+                <label for="male">Male</label>
+
+                <input type="radio" name="Gender" id="female" value="F">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <!-- Checkbox -->
+            <fieldset>
+                <legend>Interests</legend>
+
+                <input type="checkbox" name="Interests" id="Sports" value="sports">
+                <label for="Sports">Sports</label>
+
+                <input type="checkbox" name="Interests" id="Music" value="music">
+                <label for="Music">Music</label>
+            </fieldset>
+
+            <div>
+                <label for="ccontry">Country:</label>
+                <select name="Country" id="country">
+                    <option value="México">México</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
