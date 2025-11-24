@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+</head>
+<body>
+    <!-- Button with icon without text -->
+    <button aria-label="Window close">x</button>
+
+    <!-- Navigation without visible title -->
+    <header>
+        <nav aria-label="Main menu">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+        </nav>
+    </header>
+
+    <!-- input when label is not sufficient -->
+    <input type="search" aria-label="Product finder">
+
+    <!-- Field with instructions -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" aria-describedby="password-help">
+    <small id="password-help">Minimum 8 characters, includes numbers and letters</small>
+
+    <!-- Complex image with description -->
+    <img src="chart.jpg" alt="Sales in 2024" aria-describedby="chart-description">
+    <p id="chart-description">Sales up 40% in Q1</p>
+
+    <!-- Main region  -->
+    <div role="main">
+        <h3>Main content of the section</h3>
+        <p>Here is the most important content of the section</p>
+    </div>
+
+    <!-- Here is the session of important alerts -->
+    <div role="alert">Your session expires in 5 minutes!</div>
+
+</body>
+</html>

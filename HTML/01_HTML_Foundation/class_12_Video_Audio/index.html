@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and audio</title>
+</head>
+<body>
+    <!-- Video tag with some attributes. Controls: allows you to play and perform other functions to the video -->
+    <!-- <video src="media/Video1.mp4" controls width="600" height="400"></video> -->
+    <!-- Tag for video with different formats, as some browsers do not support some formats. Poster: allows to put an image when loading which allows to improve the performance. Preload: helps to load or not the video content using data-->
+    <video width="600" height="400" controls poster="IMG/cow_2_optimized_200_800x534.jpg" preload="metadata">
+        <source src="media/Video1.mp4" type="video/mp4">
+        <source src="media/example.mov" type="video/mov">
+        Your browser does not support video formats
+    </video>
+
+    <!-- With the audio tag we have the same features -->
+    <audio src=""></audio>
+
+    <audio controls preload="auto">
+        <source src="media/Audio1.mp3" type="audio/mpeg">
+        Your browser does not support HTML5
+    </audio>
+
+    <!-- How to bring videos from youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xw2T8rYUMS0?si=xXVwc-ApueXChZWf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

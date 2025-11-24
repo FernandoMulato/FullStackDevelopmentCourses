@@ -6,11 +6,29 @@
     <title>Resposive Images</title>
 </head>
 <body>
-    <!-- For images to work they must have the necessary dimensions -->
+    <!-- For images to work they must have the necessary dimensions: https://www.simpleimageresizer.com/ -->
     <img src="IMG/cow_2_optimized_200.jpg" alt="Farm landscape with a cows and a house in the background" srcset="
-    IMG/cow_2_optimized_200.jpg 400w,
-    IMG/lamp_2_optimized_500.jpg 800w,
-    IMG/red-phone-booth_1_optimized_200.jpg 1200w
-    "> 
+    IMG/lamp_2_optimized_500_400x267.jpg 400w,
+    IMG/cow_2_optimized_200_800x534.jpg 800w, 
+    IMG/red-phone-booth_1_optimized_200_1200x800.jpg 1200w" 
+    sizes="(max-width: 600px) 100vw, 50vw"> 
+
+    <picture>
+        <!-- Desktop 800x400-->
+        <source media="(min-width: 768px)" srcset="IMG/cow_2_optimized_200_800x534.jpg">
+        <!-- Mobile 400x200-->
+        <img media="(min-width: 480px)" srcset="IMG/lamp_2_optimized_500_400x267.jpg" alt="Kerosene lamp with a pine forest background">
+    </picture>
+    <!-- New attributes, lazy helps you not to load the image until you arrive by scrolling. Async helps the image to be downloaded without blocking the entire project fluids. Width: change the width of the image. height: change the image height -->
+    <img 
+    src="IMG/cow_2_optimized_600.jpg" 
+    alt="Cow"
+    srcset="IMG/cow_2_optimized_300.jpg,
+    IMG/cow_2_optimized_600.jpg 600w"
+    sizes="(max-width: 600px) 100vw, 600px"
+    loading="lazy"
+    decoding="async"
+    width="600"
+    height="400">
 </body>
 </html>
