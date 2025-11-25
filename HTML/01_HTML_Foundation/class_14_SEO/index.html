@@ -1,11 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- lang: Indicates language for search engines and screen readers -->
 <head>
+    <!-- META TGS essential for SEO -->
+
+    <!-- Charset: Required for special characters (ñ, á, é, etc)-->
     <meta charset="UTF-8">
+
+    <!-- Viewport: Mobile CRITICAL (Google uses mobile-first indexing)) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO</title>
+
+    <!-- TITLE: The most important on-page SEO factor 
+    - Maximum 50-60 characters
+    - Include main keyword
+    - Unique for each page -->
+    <title>Keyword Headline | Site Name</title>
+
+        <!-- DESCRIPTION: What appears below the title on Google
+    - Maximum 150–155 characters
+    - Attractive call to action
+    - Do not repeat the title -->
+    <meta name="description"
+    content="Attractive description that encourages clicks. Includes main benefits and secondary keywords. Maximum 155 characters." />
+
+    <!-- KEYWORDS: Low impact in modern SEO but still somewhat useful
+        - 5–10 relevant keywords
+        - Separated by commas -->
+    <meta name="keywords" content="keyword 1, keyword 2, keyword 3" />
+
+    <!-- AUTHOR: Who created the content -->
+    <meta name="author" content="Author or Company Name" />
+
+    <!-- ROBOTS: How Google should treat this page
+        - index = appear in search results
+        - follow = follow links
+        - noindex = DO NOT appear (useful for thank-you pages, admin, etc.)
+        - nofollow = DO NOT follow links -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- CANONICAL: Prevent duplicate content
+        - Indicates the "original" URL if there are multiple versions
+        - Example: with/without www, http/https, parameters -->
+    <link rel="canonical" href="https://www.example.com/main-page/" />
+
+    <!-- ========== OPEN GRAPH (Social Media) ========== -->
+    <!-- Controls how the page appears when shared on Facebook, LinkedIn, etc. -->
+    <meta property="og:title" content="Title for Social Media" />
+    <meta property="og:description" content="Optimized description for sharing" />
+    <meta property="og:image" content="https://example.com/image-1200x630.jpg"/>
+    <!-- ideal 1200x630px  -->
+    <meta property="og:url" content="https://example.com/page/" />
+    <meta property="og:type"content="website" />
+    <!-- Website, article, product -->
+
+    <!-- Favicon: Icon that appears in tabs and favorites -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- For IOS -->
+
 </head>
+
 <body>
-    
+    <!-- =========== Semantic structure (Fundamental to SEO) ===========  -->
+
+    <!-- HEADER: Site header -->
+    <header>
+        <!-- Logo/site name (can be H1 on homepage) -->
+        <a href="/" aria-label="Go to home">
+            <img src="/logo.png" alt="example logo - Description of the busines" width="200" height="50">
+        </a>
+
+        <!-- NAV: Main navigation
+        - aria-label improves accessibility and SEO
+        - Descriptive, non-generic links -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/about-us/">About Us</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Main content of the page -->
+    <main>
+
+        <!-- H1: GOLDEN RULE = ONLY ONE H1 per page
+        - Must contain the main keyword
+        - Different on each page
+        - Summarizes the page topic -->
+        <h1>Main Title with Target Keyword</h1>
+
+        <!-- STRUCTURED CONTENT WITH CORRECT HIERARCHY -->
+        <article>
+            <!-- H2: Main subtitles
+            - Use secondary keywords
+            - Maintain hierarchy (do not jump from H2 to H4) -->
+            <h2>Subtitle with keyword</h2>
+
+            <p>
+                Relevant and quality content. Google values original, useful and well-written content. Avoid the "keyword stuffing" (repeat keywords excessively)
+            </p>
+
+            <!-- OPTIMIZED IMAGES:  Critical for SEO -->
+            <img src="/images/descriptive-image-with-keywords.jpg" alt="Detailed description of the image with keywords" title="Additional information about the image" width="800" height="450" loading="lazy">
+            <!-- lazy loading improves speed -->
+
+            <!-- 
+                Rules for images
+                - Names: descriptive: red-product-2025.jpg NO IMG123.jpg
+                - Alt text descriptive (for SEO and accessibility)
+                - Specific dimensions (avoid layout shift)
+                - Modern format: webP > JPEG/PNG
+                - Optimized size: <100kb ideal
+            -->
+            
+            <h3>Sub-subtitle for Detailed Structure</h3>
+
+            <p>
+                More relevant content. Paragraphs should be readable, with moderate length (3 -4 lines ideal).
+            </p>
+
+            <!-- INTERNAL LINKS: Distribute SEO authority -->
+            <!-- Well: Descriptive link -->
+            <a href="/complete-guide-topic/">Comprehensive guide on this specific topic</a>
+
+            <!-- BAD: generic links -->
+            <!-- <a href="/page">Click here</a> -->
+            <!-- <a href="/info">More information</a> -->
+
+            <h3>Other related sub-title</h3>
+
+            <!-- LISTS: Google understands them well -->
+            <ul>
+                <li>Important point with relevant information</li>
+                <li>Another key aspect of the content</li>
+                <li>Benefit or outstanding feature</li>
+            </ul>
+
+            <!-- VIDEO: Increases page time (positive SEO signal) -->
+            <video controls width="100%" height="auto" poster="/video-thumbnail.jpg">
+                <source src="/video.mp4" type="video/mp4">
+                <source src="/video.webm" type="video/webm">
+                <!-- Alternative text for unsupported browser -->
+                Your browser does not support HTML5 video.
+            </video>
+        </article>
+
+        <!-- RELATED CONTENT: Improve internal links -->
+        <aside>
+            <h2>Related content</h2>
+            <ul>
+                <li>
+                    <a href="/related-article-1">Descriptive title of related article 1</a>
+                </li>
+                <li>
+                    <a href="/related-article-2">Descriptive title of related article 2</a>
+                </li>
+                <li>
+                    <a href="/related-article-3">Descriptive title of related article 3</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- FAQ SECTION: May appear in Google results -->
+        <section>
+            <h2>Frequently Asked Questions?</h2>
+
+            <h3>Relevant question on the subject</h3>
+            <p>Clear and concise answer that solves the user’s doubt.</p>
+
+            <h3>Another common user question?</h3>
+            <p>Helpful response with valuable information and natural keywords.</p>
+        </section>
+    </main>
+
+    <!-- FOOTER: Footer with additional links -->
+    <footer>
+        <p>&copy: 2025 Site Name. All rights reserved.</p>
+
+        <!-- Footer links for link juice distribution -->
+        <nav aria-label="Links in the footer">
+            <ul>
+                <li><a href="/privacy-policy/">Privacy policy</a></li>
+                <li><a href="/terms-use/">Terms of use</a></li>
+                <li><a href="/sitemap/">Sitemap</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Social media -->
+        <nav aria-label="Social media">
+            <a href="https://facebook.com/example" aria-label="Facebook">Facebook</a>
+            <a href="https://X.com/example" aria-label="X">X</a>
+            <a href="https://instagram.com/example" aria-label="Instagram">Instagram</a>
+        </nav>
+    </footer>
 </body>
 </html>
