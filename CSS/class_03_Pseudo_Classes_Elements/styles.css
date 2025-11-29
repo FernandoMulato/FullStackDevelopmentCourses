@@ -1,0 +1,33 @@
+/* PSEUDO-CLASSES */
+input:focus {
+    outline: 2px solid #3498db;
+    background-color: #c8f4f8;
+}
+
+li:first-child {
+    color: green;
+    font-weight: bold;
+}
+
+li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+/* PSEUDO-ELEMENTS: Help generate elements that do not exist in our HTML */
+.quote::after {
+    content: '"';
+    color: blue;
+    font-size: 24px;
+}
+
+.quote::before {
+    content: '"';
+    color: blue;
+    font-size: 24px;
+}
+

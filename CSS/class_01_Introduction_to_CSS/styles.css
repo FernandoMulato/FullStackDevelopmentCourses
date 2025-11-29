@@ -1,0 +1,14 @@
+/* Adding color to h1 label */
+h1 {
+    color: blue;
+}
+
+/* Adding color to h2 label */
+h2 {
+    color: green;
+}
+
+/* Adding color to p label */
+p {
+    color: #5795d2;
+}

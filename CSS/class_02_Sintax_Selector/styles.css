@@ -1,0 +1,48 @@
+/* p is already selector */
+p {
+    margin-bottom: 30px;
+}
+
+/* With the . class is called */
+.red {
+    color: red;
+}
+
+.container {
+    border: 2px solid blue;
+    color: red;
+}
+
+/* Adding styles to elements within a container */
+.container p {
+    color: blue;
+}
+
+/* With # is called the ID */
+#unique {
+    background-color: yellow;
+}
+
+/* PSEUDO-CLASSES */
+button:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: yellow;
+}
+
+/* Specificity */
+/* 
+    Weight
+    Element: (h1, p, div): 0,0,0,1
+    Class (.red, .big): 0,0,1,0
+    ID (#unique): 0,1,0,0
+    Inline style="...": 1,0,0,0
+    !important: Always win (Use it carefully!)
+*/

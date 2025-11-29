@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Selectors CSS</h1>
+
+    <!-- ELEMENTS -->
+    <p>Element selector {p}</p>
+    <div>Element selector {div}</div>
+
+    <!-- CLASS: Classes are generic, meaning that more than one element can have the same class-->
+    <p class="red">Class selector {.red}</p>
+    <p class="big">Class selector {.big}</p>
+    <p class="red big">Two class</p>
+
+    <!-- ID: is unique -->
+    <p id="unique">ID selector {#unique}</p>
+
+    <!-- Decendent -->
+    <div class="container">
+        <p>Direct son</p>
+        <div>
+            <p>Child nested</p>
+        </div>
+    </div>
+
+    <!-- PSEUDO-CLASSES -->
+    <button>Hover me</button>
+    <a href="#">Link</a>
+</body>
+</html>
