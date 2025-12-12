@@ -1,0 +1,94 @@
+.container,
+.parent-container,
+.scroll-container,
+.zindex-container {
+    border: 2px solid black;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.box,
+.child-absolute,
+.fixed-buttom,
+.sticky-element,
+.layer {
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.box-relative {
+    /* Allows you to move an item from its original position using
+    top, right, bottom and left. The sibling elements you have 
+     will respect your sibling’s relative space */
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+/* To use the Position Absolute the contentor father who goes to
+ use the default position. */
+.parent-container {
+    position: relative;
+    height: 100px;
+}
+
+.child-absolute {
+    /* The element does not respect the space occupied by his brother */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed-buttom {
+    /* Can be placed anywhere on the page regardless of other items */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.scroll-container {
+    height: 150px;
+    /* This allows us to scroll */
+    overflow-y: auto;
+}
+
+.sticky-element {
+    /* It is similar to fixed, continues with the scroll and when it reaches a certain point it is positioned statically. */
+    position: sticky;
+    top: 0;
+}
+
+.zindex-container {
+    position: relative;
+    height: 150px;
+}
+
+.layer {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+
+.layer-1 {
+    top: 20px;
+    left: 20px;
+    background-color: blue;
+    /* Layer priority level */
+    z-index: 1;
+}
+
+.layer-2 {
+    top: 40px;
+    left: 40px;
+    background-color: red;
+    z-index: 2;
+}
+
+.layer-3 {
+    top: 60px;
+    left: 60px;
+    background-color: green;
+    z-index: 3;
+}
+

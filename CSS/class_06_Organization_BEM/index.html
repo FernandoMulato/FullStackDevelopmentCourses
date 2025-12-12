@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization BEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Is the naming structure of a class -->
+    <h1>BEM: Block__Element--Modifier</h1>
+
+    <!-- Example: Product Card -->
+    <div class="card">
+        <h2 class="card__title">Laptop Pro</h2>
+        <p class="card__price">$999</p>
+        <button class="card__button">Buy</button>
+        <button class="card__button card__button--disabled">Out of Stock</button>
+    </div>
+
+    <!-- Second card with modifier -->
+    <div class="card card--featured">
+        <h2 class="card__title">Laptop Ultra</h2>
+        <span class="card__badge">Sale</span>
+        <p class="card__price">$1299</p>
+        <button class="card__button">Buy</button>
+    </div>
+
+    <!-- Example of incorrect nesting -->
+    <p>Wrong: card__header__title</p>
+    <p>Right: card__title</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.container {
+    border: 2px solid black;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.container__box {
+    border: 1px solid red;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f0f0f0;
+}
+
+.container__box--px {
+    width: 200px;
+}
+
+.container__box--percent {
+    width: 50%;
+}
+
+.container__box--rem {
+    /* is better for text fonts */
+    /* REM is equal to the font size of the HTML document: 1rem = 16px */
+    width: 15rem;
+}
+
+.container__box--em {
+    font-size: 20px;
+    /* EM is like REM but this accumulates depending on the font-size of the containers */
+    width: 1em;
+}
+
+.container__box--vw {
+    width: 30vw;
+}
+
+.container__box--vh {
+    height: 20vh;
+}
