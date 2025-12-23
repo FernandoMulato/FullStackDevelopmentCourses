@@ -1,0 +1,31 @@
+.color-hex {
+    /* The hexadecimal code goes from 0 to 9 and from a to f. 
+    The first two digits will be red, then green and the last blue. */
+    background-color: #ff5733; 
+}
+
+.color-rgb {
+    /* Values come from or to 255 */
+    background-color: rgb(52,152,219);
+}
+
+.color-hsl {
+    /* hsl(pitch 0 to 360 (degrees), saturation 0 to 100 (percent), luminance 0 to 100 (percent)) */
+    background-color: hsl(0, 50%, 50%);
+}
+
+.alpha-100 {
+    background-color: rgb(231, 76, 60, 1);
+}
+
+.alpha-50 {
+    background-color: rgb(231, 76, 60, 0.5);
+}
+
+.alpha-25 {
+    background-color: rgb(231, 76, 60, 0.25);
+}
+
+.currentcolor {
+    color: purple;
+}

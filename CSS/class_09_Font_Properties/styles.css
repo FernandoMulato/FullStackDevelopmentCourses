@@ -1,23 +1,27 @@
 .normal {
-
+    /* Font size */
+    font-size: 1rem;
 }
 
 .light {
-
+    /* How dense is the source */
+    font-weight: 300;
 }
 
 .bold {
-
+    font-weight: 700;
 }
 
 .compact {
-
+    /* Space between lines */
+    line-height: 1;
 }
 
 .spaced {
-    
+    line-height: 2;
 }
 
 .italic {
-    
+    /* Font style */
+    font-style: italic;
 }
