@@ -8,7 +8,5 @@ public class MyFirstJavaProgram {
   public static void main(String[] args) {
     // Printing out 
     System.out.println("Hello world!!");
-
-    // Concatenation: with +
   }
 }
